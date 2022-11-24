@@ -1,0 +1,134 @@
+/* ================================
+   CONFIGURAÇÕES GLOBAIS 
+   (APARECERÃO EM TODAS AS PÁGINAS)
+   ================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* =====================
+   MODO "DARK AND LIGHT" 
+   ===================== */
+
+/* Configuração da página inteira p/ o modo 'dark and light' */
+:root {
+    --primary-color: #F3F2EF;
+    --secundary-color: #fff;
+    --tertiary-color: #56585D;
+    --quaternery-color: rgba(0,0,0,0.2);
+    --quinary-color: #212121;
+    --senary-color: #E9ECF1;
+    --septenary-color: #56585D;
+    --octonary-color: #F8F9FA;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: 'Poppins', sans-serif, Arial;
+    --bs-body-font-size: 3rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #282A36;
+    --bs-body-bg: #fff;
+}
+.dark-theme {
+    --primary-color: #282A36;
+    --secundary-color: #343746;
+    --tertiary-color: #F4F6F9;
+    --quaternery-color: #F4F6F9;
+    --quinary-color: #F4F6F9;
+    --senary-color: #343746;
+    --septenary-color: #212121;
+    --octonary-color: #282A36;
+}
+
+/** CONIGURAÇÃO DO CORPO DAS PÁGINAS */
+body {
+    background: var(--primary-color) !important;
+    transition: .4s ease-in-out background, .4s ease-in-out color;
+    font-family: var(--bs-body-font-family) !important;
+    font-size: var(--bs-body-font-size) !important;
+}
+
+/** COR CORINGA QUE SERÁ USADA EM VÁRIOS LUGARES */
+.h-color-subtitle {
+    color: var(--tertiary-color) !important;
+
+    transition: .4s ease-in-out color;
+}
+
+/** COR "ROSINHA" DO HELP UP QUE SERÁ USADA EM VÁRIOS LUGARES */
+.h-color-help_up {
+    color: #AA87EB !important;
+}
+
+/* COR DOS ACCORDION BOOTSTRAP TITLE */
+.h-color-accordion-title {
+    color: #56585D !important;
+}
+
+/** COR "ROXINHA" DO HELP UP QUE SERÁ USADA EM VÁRIOS LUGARES */
+.h-color-purple_help_up {
+    color: #403995 !important;
+}
+
+/** COR CINZA-ESCURO DOS TÍTULOS DOS CARDS */
+.h-color-grey-black {
+    color: #212121;
+}
+
+/** CLASSE QUE SERÁ USADA PARA CONFIGURAR ALGUNS TÍTULOS */
+.h-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+/** CLASSE QUE SERÁ USADA PARA CONFIGURAR ALGUNS SUBTÍTULOS */
+.h-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/** COR DE SEÇÕES DAS PÁGINAS "LEITURAS", "ACESSIBILIDADE", "TRADUTOR EM LIBRAS" E "SOBRE" */
+.h-color-title-section {
+    color: var(--quinary-color) !important;
+
+    transition: .4s ease-in-out color;
+}
+
+/** COR DO SUBTÍTULO DE SUGESTÃO NA PÁGINA "LEITURAS" */
+.h-color-subtitle-section-books {
+    color: var(--tertiary-color) !important;
+
+    transition: .4s ease-in-out color;
+}
+
+/* TAG "DIALOG" */
+dialog::backdrop {
+    background-color: rgb(0 0 0 / .4);
+}
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+    width: 60%;
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+}
