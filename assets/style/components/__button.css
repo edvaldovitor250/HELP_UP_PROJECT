@@ -1,0 +1,16 @@
+/** COMPONENTE "BOTÃO" (CONFIGURAÇÃO PRESENTE EM TODOS OS BOTÕES DAS PÁGINAS) */
+.h-button {
+    padding: 10px 30px !important;
+    border-radius: 30px;
+    background-color: #F4F6F9;
+    color: #403995;
+    font-weight: 550;
+    cursor: pointer;
+
+    transition: .4s ease-in-out background, .4s ease-in-out color;
+}
+.h-button:hover {
+    background-color: transparent;
+    border: 2px solid #F4F6F9;
+    color: #F4F6F9;
+}

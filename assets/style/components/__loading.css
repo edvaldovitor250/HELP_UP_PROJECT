@@ -1,0 +1,36 @@
+/* ===============
+   'LOADING PAGE'
+    CONFIGURAÇÃO
+   =============== */
+   
+@import url("/assets/style/global.css");
+
+/** CONFIGURAÇÃO DA <div> (PÁGINA EM BRANCO NO CARREGAMENTO) */
+.p-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color) !important;
+    z-index: 999999 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** CONFIGURAÇÃO DA <div> QUE SERÁ O ÍCONE DE CARREMENTO */
+#load {
+    width: 60px;
+    height: 60px;
+    border: rgba(0, 0, 0, .18) solid;
+    border-left-color: #AA87EB;
+    border-radius: 50%;
+
+    animation: loading 1.2s linear infinite;
+}
+
+/** ANIMAÇÃO QUE FARÁ UMA ROTAÇÃO DE 360 GRAUS */
+@keyframes loading {
+    to {transform: rotate(360deg);}
+}
