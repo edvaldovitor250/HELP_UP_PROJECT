@@ -39,3 +39,8 @@
     - Poderia ser passado uma frase em português e, ao clicar em **Concluir**, essa frase ser modificada para a linguagem da **Libras**.
 - **Leituras dos livros:**
     - Forma **simples** e **funcional** de ler os livros através da LBS (Língua Brasileira de Sinais ), sem a extensão do navegador, sendo possível sua funcinalidade em **dispositivos móveis**.
+### 👥 TIME:
+- [Edvaldo Vitor](https://github.com/edvaldovitor250)
+- [Caio Melo](https://github.com/CaioMelo10)
+- [Walter Borges](https://github.com/wabpe)
+- [Ednaldo Luiz](https://github.com/EdnaldoLuiz)
