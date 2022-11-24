@@ -1,0 +1,93 @@
+/** =======================
+    CONFIGURAÇÃO DA 
+    PÁGINA PRINCIPAL (HOME)
+    =======================
+*/
+
+@import url("/assets/style/reset.css");
+@import url("/assets/style/global.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/components/__cards.css");
+@import url("/assets/style/components/__button.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+/* ==============
+   MAIN 
+   (ÁREA CENTRAL)
+   ============== */
+
+/** CONFIGURAÇÃO GERAL DA 1° SEÇÃO >>>> "BEM VINDOS" */
+.h-section-welcome {
+    margin-top: 80px;
+}
+
+/* ANIMAÇÃO DA IMAGEM DO LADO DIREITO */
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+
+/** BOTÃO "INICIAR" */
+.welcome__button {
+    color: #FFF !important;
+    background-color: #AA87EB !important;
+
+    transition: .4s ease-in-out color, .4s ease-in-out border;
+}
+.welcome__button:hover {
+    color: var(--quinary-color) !important;
+    background-color: transparent !important;
+    border-color: var( --quinary-color);
+}
+
+/* ======================================================================= */
+
+/** CONFIGURAÇÃO GERAL DA 2° SEÇÃO >>>> "VLIBRAS" */
+
+/** IMAGEM DE BACKGROUND DA SEÇÃO "VLIBRAS" */
+.h-bg-vlibras {
+    background: linear-gradient(rgba(64, 57, 149,.80), rgba(64, 57, 149,.80)), url("/assets/img/V-Libras/backgroundLibras.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.vlibras_button {
+    border-radius: 30px !important;
+    background-color: #FFF !important;
+    color: #403995 !important;
+
+    transition: .4s ease-in-out color, .4s ease-in-out border;
+}
+.vlibras_button:hover {
+    color: #FFF !important;
+    background-color: transparent !important;
+    border-color: #FFF !important;
+}
+
+/* ======================================================================= */
+
+/** CONFIGURAÇÃO GERAL DA 3° SEÇÃO >>>> "PRODUTOS" */
+
+/* SOMBRA DOS CARDS */
+.h-shadow-card {
+    box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -webkit-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -moz-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+}
+
+/* BORDAS AREDONDADAS */
+.h-border_radius-cards {
+    border-radius: 25px !important;
+}
