@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/assets/style/pages/Login/login.css">
+
+    <link rel="icon" href="/assets/img/Logo/favicon.png" type="image/x-icon">
+    <title>Registrar no Help Up | Help Up</title>
+</head>
+<body>
+
+    <!----------------------- PÁGINA DE CARREGAMENTO INICIAL (LOADING-PAGE) ----------------------->
+    <div class="p-loading">
+        <div id="load"></div>
+    </div>
+
+    <!---------------------------- CONTEÚDO PRINCIPAL (CENTRO DA PÁGINA) -------------------------->
+    <main>
+
+        <!-- SEÇÃO CENTRAL DA CAIXA DE LOGIN -->
+        <section id="login">
+
+            <!-- CAIXA DE LOGIN -->
+            <div class="container">
+
+                <!-- ÁREA DO BOTÃO PARA O MODO "DARK E LIGHT" -->
+                <div class="h-theme">
+                    <img src="/assets/img/DarkLight/sun.png" alt="Botão de mudança de tema." id="icon" role="button" title="'Dark' e 'Light'">
+                </div>
+
+                <!-- CAMPOS -->
+                <div class="fields">
+
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="/index.html"><img src="/assets/img/Logo/logoHelpUp.png" alt="Imagem do logotipo da página, que é 'Help Up'." role="img" title="Help Up"></a>
+                    </div>
+
+                    <!-- CAMPO DAS CAIXAS DE TEXTO -->
+                    <div class="fields__textboxs">
+                        <input type="email" name="email" id="field__email" placeholder="E-mail">
+                        <input type="password" name="password" id="field__pass" placeholder="Senha">
+                    </div>
+
+                    <!-- CAMPO "LEMBRAR DO MEU ACESSO" -->
+                    <div class="fields__remember">
+                        <input type="checkbox" name="checkbox" id="field__remember">
+                        <label for="field__remember">Lembrar do meu acesso</label>
+                    </div>
+
+                    <!-- CAMPO DO BOTÃO "ENTRAR" -->
+                    <div class="fields__buttons">
+                        <button id="btn__login">Entrar</button>
+                    </div>
+            
+                    <!-- CAMPO DO LINK "ESQUECI MINHA SENHA OU E-MAIL" -->
+                    <div class="fields__recovery">
+                        <a href="#">Esqueci minha senha ou e-mail</a>
+                    </div>
+            
+                    <!-- CAMPO DO DIVISOR "-OU-" -->
+                    <div class="fields__divider">
+                        <p id="field__divider">-ou-</p>
+                    </div>
+
+                    <!-- CAMPO DO BOTÃO DE LOGIN COM O GOOGLE -->
+                    <div class="fields__google">
+                        <button id="btn__login-google"><i id="icon" class="fa-brands fa-google"></i> Entrar com o Google</button>
+                    </div>
+
+                    <!-- CAMPO "REGISTRAR-SE" -->
+                    <div class="fields__create">
+                        <a href="#">Não possui uma conta? <span class=" h-color-help_up" id="create">Cadastre-se</span></a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-------------------------------------- PLUG-IN (V-LIBRAS) ------------------------------------------>
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+            <img class="access-button" data-src="assets/component-ac.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/component-ac.png" title="Plug-In">
+            <img class="pop-up" data-src="assets/popup.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/popup.png">
+        </div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <!-- JAVASCRIPT USADO -->
+    <script src="/assets/scripts/Loading/loading.js"></script>
+    <script src="/assets/scripts/DarkMode/darkMode.js"></script>
+    <script src="https://kit.fontawesome.com/4ddcf64cd5.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

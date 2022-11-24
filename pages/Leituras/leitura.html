@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site acessível aos deficientes auditivos e pessoas interessadas na LBA (Língua Brasileira de Sinais)">
+        <title>Help Up | Encontre sua leitura favorita!</title>
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="/assets/img/Logo/favicon.png" />
+        <!-- Bootstrap icons-->
+        <link href="/assets/bootstrap/icons/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/assets/style/pages/Leituras/leituras.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        
+        <!----------------------- PÁGINA DE CARREGAMENTO INICIAL (LOADING-PAGE) ----------------------->
+        <div class="p-loading">
+            <div id="load"></div>
+        </div>
+
+        <!------------------------------------ CABEÇALHO DA PÁGINA ------------------------------------>
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
+                <div class="container px-5">
+                    <a href="index.html" class="navbar-brand"><img src="/assets/img/Logo/logoHelpUp.png" alt="Logo" class="img-fluid"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="bi-list icon-hamburguer"></i></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link h-color-help_up h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Leituras/leitura.html">Leitura</a></li>
+                            <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/TradutorLibras/tradutorLibras.html">Tradutor em Libras</a></li>
+                            <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/AprendaLibras/aprendaLibras.html">Aprenda Libras</a></li>
+                            <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Doações/doacao.html">Doações</a></li>
+                            <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Sobre/sobre.html">Sobre</a></li>
+                            <li class="nav-item"><img class="nav-link px-sm-3 me-3" src="/assets/img/DarkLight/sun.png" alt="Botão de mudança de tema." id="icon" role="button" title="ícone do Sol ou Lua"></li>
+                        </ul>
+                        <a href="/pages/Login/login.html" role="button"><button type="button" class="h-pills fw-bolder" title="Iniciar">Iniciar</button></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!-- SEÇÃO PRINCIPAL -->
+        <main>
+
+            <!-- SEÇÃO INICIAL SUPERIOR "LEITURAS"-->
+            <section class="py-5 h-section-books">
+                <div class="container px-4 px-lg-5 my-5">
+                    <div class="text-center text-white">
+                        <!-- TÍTULO -->
+                        <h1 class="display-4 fw-bolder">Leituras:</h1>
+                        <!-- PARÁGRAFO -->
+                        <p class="lead fw-normal text-white-50 mb-0">Aqui você poderá encontrar e ler livros de diversos temas em PDF!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO DOS LIVROS -->
+            <section class="py-5">
+                <div class="container px-4 px-lg-5 mt-5">
+                    <!-- SEÇÃO "INFANTIS" -->
+                    <h1 class="fw-bolder h-color-title-section">Infantis</h1>
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/Infantis/oPequenoPrincipe.jpg" title="O Pequeno Príncipe" alt="Capa do livro: O Pequeno Príncipe" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">O Pequeno Príncipe</h5>
+                                        <!-- AUTOR -->
+                                        <span class="text-muted">Antoine de Saint-Exupéry</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-half"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/Infantis/oPequenoPrincipe.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://muraldoslivros.com/resumo-do-livro-o-pequeno-principe/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/Infantis/diarioDeUmBanana.jpg" title="Diário de um Banana" alt="Capa do livro: Diário de um Banana" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">Diário de um Banana</h5>
+                                        <!-- AUTOR -->
+                                        <span class="text-muted">Jeff Kinney</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-half"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/Infantis/diarioDeUmBanana.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://odiariodeumbanana.fandom.com/pt-br/wiki/Di%C3%A1rio_de_um_Banana" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/Infantis/meninoMaluquinho.jpg" title="o Menino Maluquinho" alt="Capa do livro: o Menino Maluquinho" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">O Menino Maluquinho</h5>
+                                        <!-- AUTOR -->
+                                        <span class="text-muted">Ziraldo Alves Pinto</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-half"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/Infantis/meninoMaluquinho.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://ciadoslivros.com.br/o-menino-maluquinho-tudo-sobre-essa-historia-incrivel/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/Infantis/oSaci.jpeg" title="o Saci" alt="Capa do livro: o Saci" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">O Saci</h5>
+                                        <!-- AUTOR -->
+                                        <span class="text-muted">Monteiro Lobato</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/Infantis/oSaci.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://lobato.com.vc/2022/08/o-saci-um-livro-atual-para-criancas-e-adultos-100-anos-apos-o-seu-lancamento/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="fw-bolder h-color-title-section">Literatura Brasileira<h1>
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/LiteraturaBrasileira/ateneu.jpg" title="O Ateneu" alt="Capa do livro: O Ateneu" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">O Ateneu</h5>
+                                        <!-- AUTOR -->
+                                        <span class="text-muted">Raul Pompeia</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/LiteraturaBrasileira/ateneu.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://brasilescola.uol.com.br/literatura/o-ateneu.htm/pages/VLibrasExtensão/vlibrasExtensao.html:~:text=O%20Ateneu%20%C3%A9%20um%20romance,burguesia%20carioca%20do%20s%C3%A9culo%20XIX." target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/LiteraturaBrasileira/iracema.jpg" alt="Capa: Iracema" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">Iracema</h5>
+                                        <!-- Book price-->
+                                        <span class="text-muted">José de Alencar</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/LiteraturaBrasileira/iracema.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://brasilescola.uol.com.br/literatura/iracema.htm" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/LiteraturaBrasileira/oGuarani.jpg" title="O Guarani" alt="Capa: O Guarani" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">O Guarani</h5>
+                                        <!-- Book price-->
+                                        <span class="text-muted">José de Alencar</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/LiteraturaBrasileira/oGuarani.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.todamateria.com.br/o-guarani/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD-->
+                        <div class="col mb-5">
+                            <div class="card h-100">
+                                <!-- ÍCONE "PDF" -->
+                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                <!-- IMAGEM DO LIVRO -->
+                                <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/LiteraturaBrasileira/vidasSecas.jpg" title="Vidas Secas" alt="Capa: Vidas Secas" />
+                                <!-- DETALHES DO LIVRO -->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- NOME -->
+                                        <h5 class="fw-bolder">Vidas Secas</h5>
+                                        <!-- Book price-->
+                                        <span class="text-muted">Graciliano Ramos</span>
+                                        <!-- AVALIAÇÕES -->
+                                        <div class="d-flex justify-content-center small text-warning mb-2">
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-fill"></div>
+                                            <div class="bi-star-half"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- BOTÕES -->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/LiteraturaBrasileira/vidasSecas.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.todamateria.com.br/vidas-secas-de-graciliano-ramos//pages/VLibrasExtensão/vlibrasExtensao.html:~:text=Vidas%20Secas%20%C3%A9%20um%20profundo,que%20assola%20o%20sert%C3%A3o%20nordestino." target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                </div>
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="fw-bolder h-color-title-section">Desenvolvimento Pessoal<h1>
+                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                            <!--CARD-->
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <!-- ÍCONE "PDF" -->
+                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                    <!-- IMAGEM DO LIVRO -->
+                                    <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/DesenvolvimentoPessoal/oHomemMaisRicoDaBabilonia.jpg" title="O Homem Mais Rico da Babilônia" alt="Capa do livro: O Homem Mais Rico da Babilônia" />
+                                    <!-- DETALHES DO LIVRO -->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- NOME -->
+                                            <h5 class="fw-bolder">O Homem Mais Rico da Babilônia</h5>
+                                            <!-- AUTOR -->
+                                            <span class="text-muted">George S Clason</span>
+                                            <!-- AVALIAÇÕES -->
+                                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BOTÕES -->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/DesenvolvimentoPessoal/oHomemMaisRicoDaBabilonia.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.idinheiro.com.br/financaspessoais/resenha-o-homem-mais-rico-da-babilonia/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <!-- ÍCONE "PDF" -->
+                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                    <!-- IMAGEM DO LIVRO -->
+                                    <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/DesenvolvimentoPessoal/oMilagreDaManha.jpg" title="O Milagre da Manhã" alt="Capa: O Milagre da Manhã" />
+                                    <!-- DETALHES DO LIVRO -->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- NOME -->
+                                            <h5 class="fw-bolder">O Milagre da Manhã</h5>
+                                            <!-- AUTOR -->
+                                            <span class="text-muted">Hall Elrod</span>
+                                            <!-- AVALIAÇÕES -->
+                                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-half"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BOTÕES -->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/DesenvolvimentoPessoal/oMilagreDaManha.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://deliciadeblog.com/o-milagre-da-manha/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <!-- ÍCONE "PDF" -->
+                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                    <!-- IMAGEM DO LIVRO -->
+                                    <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/DesenvolvimentoPessoal/oMongeEoExecutivo.jpg" title="O Monge e o Executivo: Uma história sobre a essência da liderança" alt="Capa: O Monge e o Executivo: Uma história sobre a essência da liderança" />
+                                    <!-- DETALHES DO LIVRO -->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- NOME -->
+                                            <h5 class="fw-bolder">O Monge e o Executivo: Uma história sobre a essência da liderança</h5>
+                                            <!-- AUTOR -->
+                                            <span class="text-muted">James C. Hunter</span>
+                                            <!-- AVALIAÇÕES -->
+                                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product actions-->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/DesenvolvimentoPessoal/oMongeEoExecutivo.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://blog.egestor.com.br/o-monge-e-o-executivo/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CARD-->
+                            <div class="col mb-5">
+                                <div class="card h-100">
+                                    <!-- ÍCONE "PDF" -->
+                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">PDF</div>
+                                    <!-- IMAGEM DO LIVRO -->
+                                    <img class="card-img-top h-img-card-size" src="/assets/img/BooksCover/DesenvolvimentoPessoal/paiRicoPaiPobre.jpg" title="Pai Rico, Pai Pobre: O que os ricos ensinam a seus filhos sobre dinheiro" alt="Capa: Pai Rico, Pai Pobre: O que os ricos ensinam a seus filhos sobre dinheiro" />
+                                    <!-- DETALHES DO LIVRO -->
+                                    <div class="card-body p-4">
+                                        <div class="text-center">
+                                            <!-- NOME -->
+                                            <h5 class="fw-bolder">Pai Rico, Pai Pobre: O que os ricos ensinam a seus filhos sobre dinheiro</h5>
+                                            <!-- AUTOR -->
+                                            <span class="text-muted">Robert T. Kiyosaki</span>
+                                            <!-- AVALIAÇÕES -->
+                                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                                <div class="bi-star-fill"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- BOTÕES -->
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/assets/PDFs/DesenvolvimentoPessoal/paiRicoPaiPobre.pdf" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Ler agora!</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="https://www.idinheiro.com.br/financaspessoais/resenha-pai-rico-pai-pobre/" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i>Saber mais</a></div>
+                                    </div>
+                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="/pages/VLibrasExtensão/vlibrasExtensao.html">Acessibilidade</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEÇÃO "FORMULÁRIO DE SUGESTÃO" -->
+            <section class="h-section-formulario">
+                <div class="container px-4 px-lg-5">
+                    <div class="text-center">
+                        <!-- TÍTULO -->
+                        <h1 class="fw-bolder h-color-title-section">NÃO ACHOU SEU LIVRO OU GÊNERO FAVORITO?</h1>
+                        <!-- PARÁGRAFO -->
+                        <p class="mb-5 h-color-subtitle-section-books">Mande sua sugestão para nós preenchendo algumas informações abaixo:</p>
+                    </div>
+            
+                    <!-- FORMULÁRIO -->
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="94954244-c603-4099-8d96-2a34136d5ea7">
+                        <input type="hidden" name="redirectTo" value="javascript:void(window.location.href)">
+            
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-lg-8 col-xl-6">
+                                <div class="form-group">
+                                    <label class="h-color-title-section">Nome:</label>
+                                    <input class="form-control fieldBooks" type="text" name="$nome" placeholder="Digite seu nome aqui" required title="Digite seu nome."><br>
+
+                                    <label class="h-color-title-section">Livro:</label>
+                                    <input class="form-control fieldBooks" type="text" name="$livro" placeholder="Seu livro preferido!" required title="Digite seu livro favorito!"><br>
+            
+                                    <label class="h-color-title-section">Gênero:</label>
+                                    <input class="form-control fieldBooks" type="text" name="$genero" placeholder="Gênero do seu livro preferido!" required title="Gênero do livro">
+                                    <small class="h-color-title-section">Exemplo: Romance, Ação, Aventura, New adult, Histórias em Quadrinhos (HQs)...</small>
+                                </div><br>
+                                <button id="submitBook" class="h-button_submit h-pills fw-bolder me-sm-3" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                                <button class="h-button_reset h-pills fw-bolder ms-sm-3" type="reset"><i class="fa-solid fa-eraser"></i> Apagar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- SEÇÃO DE "ODS 4" -->
+            <section class="h-bg-ods-4 py-4 mb-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <!-- TÍTULO -->
+                                <h1 class="display-5 fw-bolder text-white mb-2">Essa seção também contribui com a ODS (Objetivo de Desenvolvimento Sustentável) 4: Educação de qualidade</h1>
+                                <!-- PARÁGRAFO -->
+                                <p class="lead fw-normal text-white-50 mb-4">Objetivo: Assegurar a educação inclusiva e equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todas e todos.</p>
+                                <!-- BOTÃO "SABER MAIS" -->
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                    <a class="btn btn-outline-light btn-lg px-4 fw-bolder" href="https://brasil.un.org/pt-br/sdgs/4" target="_blank"><i class="fa-sharp fa-solid fa-circle-info"></i> Saber Mais</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- IMAGEM DA ODS 4 -->
+                        <div class="col-xl-5 col-xxl-6 d-xl-block text-center" data-aos="zoom-in" data-aos-delay="200"><img class="img-fluid rounded-3 my-5 animated" src="/assets/img/ODS4/logoOds4.png" alt="Logotipo da ODS (Objetivo de Desenvolvimento Sustentável) 4" /></div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!------------------------------------------- RODAPÉ ------------------------------------------>
+        <footer id="footer" class="text-center bg-color_footer">
+            <div class="container pb-2">
+            <!-- SEÇÃO LINKS -->
+            <section class="mt-5">
+                <!-- LINHA -->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/index.html" class="h-links_pages">Início</a>
+                    </h6>
+                </div>
+        
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/pages/Leituras/leitura.html" class="h-links_pages">Leituras</a>
+                    </h6>
+                </div>
+        
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/pages/TradutorLibras/tradutorLibras.html" class="h-links_pages">Tradutor em Libras</a>
+                    </h6>
+                </div>
+        
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/pages/AprendaLibras/aprendaLibras.html" class="h-links_pages">Aprenda Libras</a>
+                    </h6>
+                </div>
+
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/pages/Doações/doacao.html" class="h-links_pages">Doações</a>
+                    </h6>
+                </div>
+
+                <!-- COLUNA -->
+                <div class="col-md-2">
+                    <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                    <a href="/pages/Sobre/sobre.html" class="h-links_pages">Sobre</a>
+                    </h6>
+                </div>
+                </div>
+            </section>
+        
+            <hr class="mb-5 h-color-subtitle" />
+        
+            <!-- SEÇÃO FORMULÁRIO -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        
+                        <!-- TÍTULO DO FORMULÁRIO -->
+                        <h1 class="h-title_form">Fale conosco</h1>
+
+                        <!-- FORMULÁRIO -->
+                        <form action="https://api.staticforms.xyz/submit" method="post">
+                            <input type="hidden" name="accessKey" value="94954244-c603-4099-8d96-2a34136d5ea7">
+                            <input type="hidden" name="redirectTo" value="javascript:void(window.location.href)">
+
+                            <input class="fieldsContactUs h-boxes" type="text" name="name" placeholder="Seu Nome" required title="Digite seu nome."><br>
+                            <input class="fieldsContactUs h-boxes" type="email" name="email" placeholder="Seu E-mail" required title="Digite um E-mail válido."><br>
+                            <textarea class="fieldsContactUs h-box_message" name="message" rows="8" cols="30" placeholder="Sua Mensagem" required title="Descreva sua mensagem para nós."></textarea><br>
+                            <button id="submitContact" class="h-button_submit h-pills fw-bolder me-sm-3" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                            <button class="h-button_reset h-pills fw-bolder ms-sm-3" type="reset"><i class="fa-solid fa-eraser"></i> Apagar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- SEÇÃO REDES SOCIAIS -->
+            <section class="text-center mb-5">
+                <a href="" class="me-4">
+                <i class="fab fa-facebook-f h-icon_medias"></i>
+                </a>
+                <a href="" class="me-4">
+                <i class="fab fa-twitter h-icon_medias"></i>
+                </a>
+                <a href="" class="me-4">
+                <i class="fab fa-instagram h-icon_medias"></i>
+                </a>
+            </section>
+            </div>
+        </footer>
+
+        <!-------------------------------------- PLUG-IN (V-LIBRAS) ------------------------------------------>
+        <div vw class="enabled">
+            <div vw-access-button class="active">
+                <img class="access-button" data-src="assets/component-ac.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/component-ac.png" title="Plug-In">
+                <img class="pop-up" data-src="assets/popup.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/popup.png">
+            </div>
+            <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+            </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        </div>
+
+        <!-- SEÇÃO CENTRAL DE AGRADECIMENTO -->
+        <dialog id="thanksDialog">
+            <div class="container px-4 px-lg-5 my-5">
+                <!-- TÍTULO -->
+                <h1 class="display-6 fw-bolder h-color-help_up">Agradecemos pela sua mensagem!</h1>
+                <!-- PARÁGRAFO -->
+                <p class="lead fw-normal mb-4 h-color-subtitle">Em breve entraremos em contato ;)</p>
+                <!-- BOTÃO "FECHAR" -->
+                <button id="btnDialog" type="button" class="h-pills fw-bolder" title="Ok">Ok</button>
+            </div>
+        </dialog>
+
+        <!-- JAVASCRIPT USADO -->
+        <script src="https://kit.fontawesome.com/4ddcf64cd5.js" crossorigin="anonymous"></script> <!-- BIBLIOTECA DE ÍCONES -->
+        <script src="/assets/scripts/Loading/loading.js"></script>
+        <script src="/assets/scripts/DarkMode/darkMode.js"></script>
+        <script src="/assets/scripts/DialogContactUs/dialogContactUs.js"></script>
+        <script src="/assets/scripts/DialogBooks/dialogBooks.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

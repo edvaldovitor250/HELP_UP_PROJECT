@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style/pages/AprendaLibras/aprendaLibras.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/icons/bootstrap-icons.css">
+
+    <!-- Favicon-->
+    <link rel="icon" href="/assets/img/Logo/favicon.png" type="image/x-icon">
+    <title>Help Up | Aprenda Libras!</title>
+</head>
+<body>
+    
+     <!----------------------- PÁGINA DE CARREGAMENTO INICIAL (LOADING-PAGE) ----------------------->
+    <div class="p-loading">
+        <div id="load"></div>
+    </div>
+
+    <!------------------------------------ CABEÇALHO DA PÁGINA ------------------------------------>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
+            <div class="container px-5">
+                <a href="index.html" class="navbar-brand"><img src="/assets/img/Logo/logoHelpUp.png" alt="Logo" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="bi-list icon-hamburguer"></i></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Leituras/leitura.html">Leitura</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/TradutorLibras/tradutorLibras.html">Tradutor em Libras</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-help_up h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/AprendaLibras/aprendaLibras.html">Aprenda Libras</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Doações/doacao.html">Doações</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Sobre/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><img class="nav-link px-sm-3 me-3" src="/assets/img/DarkLight/sun.png" alt="Botão de mudança de tema." id="icon" role="button" title="ícone do Sol ou Lua"></li>
+                    </ul>
+                    <a href="/pages/Login/login.html" role="button"><button type="button" class="h-pills fw-bolder" title="Iniciar">Iniciar</button></a>
+               </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SEÇÃO INICIAL SUPERIOR "APRENDA LIBRAS"-->
+    <section class="py-5 h-section-aprendaLibras">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="text-center text-white">
+                <!-- TÍTULO -->
+                <h1 class="display-4 fw-bolder">Aprenda Libras:</h1>
+                <!-- PARÁGRAFO -->
+                <p class="lead fw-normal text-white-50 mb-0">Em pequenos módulos, inicie seus estudos em libras sabendo o alfabeto, sinais, cores e saudações!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAL -->
+    <main class="flex-shrink-0">
+
+        <!-- SEÇÃO DOS CONTEÚDOS - MÓDULO 1 -->
+        <section class="py-5">
+            <div class="container">
+                <div class="col-sm-8 offset-sm-2">
+
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder h-color-title-section">Módulo 1</h1>
+                    </div>
+                    
+                    <div class="row gx-5">
+                        <div class="col-xl-8 w-100">
+
+                            <!-- ALFABETO -->
+                            <h2 class="fw-bolder mb-3 h-color-title-section"> Alfabeto </h2>
+                            <div class="accordion mb-5" id="accordionAlphabet">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#alphabetOne" aria-expanded="false" aria-controls="alphabetOne">Manual</button></h3>
+                                    <div class="accordion-collapse collapse" id="alphabetOne" aria-labelledby="headingOne" data-bs-parent="#accordionAlphabet">
+                                        <div class="accordion-body">
+                                           <p> Neste artigo vamos apresentar as letras do alfabeto (A-Z + Ç).
+                                            <img class="card-img-top mt-4 w-100" src="/assets/img/AprendaLibras/alfabeto.jpg" alt="Alfabeto Manual">
+                                           </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#alphabetTwo" aria-expanded="false" aria-controls="alphabetTwo">Semelhantes porém diferetes</button></h3>
+                                    <div class="accordion-collapse collapse" id="alphabetTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionAlphabet">
+                                        <div class="accordion-body">
+                                            <p>1 - Letras <strong>F</strong> e <strong>T</strong>:</p>
+                                            <div class="row">
+                                                <div class="col-6"><img class="card-img-top mb-4 w-75" src="/assets/img/AprendaLibras/F.jpg" alt="Letra 'F' em Libras"></div>
+                                                <div class="col-6"><img class="card-img-top mb-4 w-75" src="/assets/img/AprendaLibras/T.jpeg" alt="Letra 'T' em Libras"></div>
+                                            </div>
+                                            <p>Repare que o polegar está tocando em lados diferentes do dedo indicador.</p>
+
+                                            <br>
+
+                                            <p>2 - Letras <strong>C</strong> e <strong>Ç</strong>:</p>
+                                            <div class="row mb-4">
+                                                <div class="col-6"><img class="card-img-top mt-3 w-75 h-100" src="/assets/img/AprendaLibras/C.jpg" alt="Letra 'C' em Libras"></div>
+                                                <div class="col-6"><img class="card-img-top mt-3 w-75 h-100" src="/assets/img/AprendaLibras/Ç.jpg" alt="Letra 'Ç' em Libras"></div>
+                                            </div>
+                                            <p>As letras <strong>C</strong> e <strong>Ç</strong> se distinguem quanto ao movimento. A primeira permanece <span class="h-color-help_up"><b>estática</b></span>, enquanto na segunda há uma tremulação da mão.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+                            <!-- NÚMEROS -->
+                            <h2 class="fw-bolder mb-3 h-color-title-section"> Números </h2>
+                            <div class="accordion mb-5" id="accordionNumber">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#numberOne" aria-expanded="false" aria-controls="numberOne">0-20</button></h3>
+                                    <div class="accordion-collapse collapse" id="numberOne" aria-labelledby="headingOne" data-bs-parent="#accordionNumber">
+                                        <div class="accordion-body">
+                                            <img class="card-img-top mt-4 w-100" src="/assets/img/AprendaLibras/numeros.jpg" alt="Números do zero ao vinte">
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+                            <!-- PALAVRAS-CHAVES -->
+                            <h2 class="fw-bolder mb-3 h-color-title-section"> Palavras-Chaves </h2>
+                            <div class="accordion mb-5" id="accordionKeyWords">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#keyWordOne" aria-expanded="false" aria-controls="keyWordOne">Sinais úteis</button></h3>
+                                    <div class="accordion-collapse collapse" id="keyWordOne" aria-labelledby="headingOne" data-bs-parent="#keyWordOne">
+                                        <div class="accordion-body">
+                                            <img class="card-img-top mt-4 w-100" src="/assets/img/AprendaLibras/outros_sinais_uteis.jpg" alt="Sinais úteis">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#keyWordTwo" aria-expanded="false" aria-controls="keyWordTwo">Sinais de cores</button></h3>
+                                    <div class="accordion-collapse collapse" id="keyWordTwo" aria-labelledby="headingOne" data-bs-parent="#keyWordTwo">
+                                        <div class="accordion-body">
+                                            <img class="card-img-top mt-4 w-100" src="/assets/img/AprendaLibras/cores.jpg" alt="Sinais de cores">
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                            </div>
+
+                            <!-- PERGUNTAS -->
+                            <h2 class="fw-bolder mb-3 h-color-title-section"> Perguntas </h2>
+                            <div class="accordion mb-5" id="accordionQuestion">
+
+                                <div class="accordion-item">
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#questionOne" aria-expanded="false" aria-controls="questionOne">Sinais de perguntas</button></h3>
+                                    <div class="accordion-collapse collapse" id="questionOne" aria-labelledby="headingOne" data-bs-parent="#questionOne">
+                                        <div class="accordion-body">
+                                            <img class="card-img-top mt-4 w-100" src="/assets/img/AprendaLibras/perguntas.jpg" alt="Sinais de perguntas">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DOS CONTEÚDOS - MÓDULO 2 (DESABILITADO)-->
+        <section class="py-5">
+            <div class="container">
+                <div class="col-sm-8 offset-sm-2">
+
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bolder h-color-accordion-title">Módulo 2</h1>
+                        <a href="/pages/Login/login.html">
+                            <h3 class="h-section-disable fw-bolder h-pro-color_animated"><i class="fa-solid fa-star"></i> Pro</h3>
+                        </a>
+                    </div>
+                    
+                    <div class="row gx-5">
+                        <div class="col-xl-8 w-100">
+
+                        <!-- SAÚDE E SEGURANÇA -->
+                        <h2 class="fw-bolder mb-3 h-color-accordion-title"> Saúde e Segurança </h2>
+                        <div class="accordion mb-5" id="accordionSS">
+
+                            <div class="accordion-item collapsed">
+                                <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">Sinais de Saúde e Segurança</button></h3>
+                                <div class="accordion-collapse collapse" id="" aria-labelledby="headingOne" data-bs-parent="#">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- COPA DO MUNDO -->
+                        <h2 class="fw-bolder mb-3 h-color-accordion-title"> Copa do Mundo </h2>
+                        <div class="accordion mb-5" id="accordionSS">
+
+                            <div class="accordion-item collapsed">
+                                <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">Sinais da Copa do Mundo</button></h3>
+                                <div class="accordion-collapse collapse" id="" aria-labelledby="headingOne" data-bs-parent="#">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- APRESENTAÇÃO -->
+                        <h2 class="fw-bolder mb-3 h-color-accordion-title"> Apresentação </h2>
+                        <div class="accordion mb-5" id="accordionSS">
+
+                            <div class="accordion-item collapsed">
+                                <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">Apresentações em Libras</button></h3>
+                                <div class="accordion-collapse collapse" id="" aria-labelledby="headingOne" data-bs-parent="#">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <!-- VERBOS -->
+                        <h2 class="fw-bolder mb-3 h-color-accordion-title"> Verbos </h2>
+                        <div class="accordion mb-5" id="accordionSS">
+
+                            <div class="accordion-item collapsed">
+                                <h3 class="accordion-header" id="headingOne"><button class="accordion-button collapsed h-color-accordion-title fw-bolder" type="button" data-bs-toggle="collapse" data-bs-target="#" aria-expanded="false" aria-controls="">Verbos em Libras</button></h3>
+                                <div class="accordion-collapse collapse" id="" aria-labelledby="headingOne" data-bs-parent="#">
+                                    <div class="accordion-body">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!------------------------------------------- RODAPÉ ------------------------------------------>
+    <footer id="footer" class="text-center bg-color_footer">
+        <div class="container pb-2">
+        <!-- SEÇÃO LINKS -->
+        <section class="mt-5">
+            <!-- LINHA -->
+            <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/index.html" class="h-links_pages">Início</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Leituras/leitura.html" class="h-links_pages">Leituras</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/TradutorLibras/tradutorLibras.html" class="h-links_pages">Tradutor em Libras</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/AprendaLibras/aprendaLibras.html" class="h-links_pages">Aprenda Libras</a>
+                </h6>
+            </div>
+
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Doações/doacao.html" class="h-links_pages">Doações</a>
+                </h6>
+            </div>
+
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Sobre/sobre.html" class="h-links_pages">Sobre</a>
+                </h6>
+            </div>
+            </div>
+        </section>
+    
+        <hr class="mb-5 h-color-subtitle" />
+    
+        <!-- SEÇÃO FORMULÁRIO -->
+        <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- TÍTULO DO FORMULÁRIO -->
+                    <h1 class="h-title_form">Fale conosco</h1>
+
+                    <!-- FORMULÁRIO -->
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="94954244-c603-4099-8d96-2a34136d5ea7">
+                        <input type="hidden" name="redirectTo" value="javascript:void(window.location.href)">
+
+                        <input class="fieldsContactUs h-boxes" type="text" name="name" placeholder="Seu Nome" required title="Digite seu nome."><br>
+                        <input class="fieldsContactUs h-boxes" type="email" name="email" placeholder="Seu E-mail" required title="Digite um E-mail válido."><br>
+                        <textarea class="fieldsContactUs h-box_message" name="message" rows="8" cols="30" placeholder="Sua Mensagem" required title="Descreva sua mensagem para nós."></textarea><br>
+                        <button id="submitContact" class="h-button_submit h-pills fw-bolder me-sm-3" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                        <button class="h-button_reset h-pills fw-bolder ms-sm-3" type="reset"><i class="fa-solid fa-eraser"></i> Apagar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO REDES SOCIAIS -->
+        <section class="text-center mb-5">
+            <a href="" class="me-4">
+            <i class="fab fa-facebook-f h-icon_medias"></i>
+            </a>
+            <a href="" class="me-4">
+            <i class="fab fa-twitter h-icon_medias"></i>
+            </a>
+            <a href="" class="me-4">
+            <i class="fab fa-instagram h-icon_medias"></i>
+            </a>
+        </section>
+        </div>
+    </footer>
+
+    <!-------------------------------------- PLUG-IN (V-LIBRAS) ------------------------------------------>
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+            <img class="access-button" data-src="assets/component-ac.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/component-ac.png" title="Plug-In">
+            <img class="pop-up" data-src="assets/popup.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/popup.png">
+        </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <!-- SEÇÃO CENTRAL DE AGRADECIMENTO -->
+    <dialog>
+        <div class="container px-4 px-lg-5 my-5">
+            <!-- TÍTULO -->
+            <h1 class="display-6 fw-bolder h-color-help_up">Agradecemos pela sua mensagem!</h1>
+            <!-- PARÁGRAFO -->
+            <p class="lead fw-normal mb-4 h-color-subtitle">Em breve entraremos em contato ;)</p>
+            <!-- BOTÃO "FECHAR" -->
+            <button type="button" class="h-pills fw-bolder" title="Ok">Ok</button>
+        </div>
+    </dialog>
+
+    <!-- JAVASCRIPT USADO -->
+    <script src="https://kit.fontawesome.com/4ddcf64cd5.js" crossorigin="anonymous"></script> <!-- BIBLIOTECA DE ÍCONES -->
+    <script src="/assets/scripts/Loading/loading.js"></script>
+    <script src="/assets/scripts/DarkMode/darkMode.js"></script>
+    <script src="/assets/scripts/DialogContactUs/dialogContactUs.js"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
