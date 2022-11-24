@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site acessível aos deficientes auditivos e pessoas interessadas na LBS (Língua Brasileira de Sinais).">
+    <link rel="stylesheet" href="/assets/style/home/home.css">
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/bootstrap/icons/bootstrap-icons.css">
+
+    <link rel="icon" href="/assets/img/Logo/favicon.png" type="image/x-icon">
+    <title>Help Up | Site acessível aos deficientes auditivos</title>
+</head>
+<body>
+
+    <!----------------------- PÁGINA DE CARREGAMENTO INICIAL (LOADING-PAGE) ----------------------->
+    <div class="p-loading">
+        <div id="load"></div>
+    </div>
+
+    <!------------------------------------ CABEÇALHO DA PÁGINA ------------------------------------>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top bg-navbar">
+            <div class="container px-5">
+                <a href="index.html" class="navbar-brand"><img src="/assets/img/Logo/logoHelpUp.png" alt="" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i class="bi-list icon-hamburguer"></i></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link h-color-help_up fw-bolder px-sm-3 h-font-size_animation " href="/index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Leituras/leitura.html">Leitura</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/TradutorLibras/tradutorLibras.html">Tradutor em Libras</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/AprendaLibras/aprendaLibras.html">Aprenda Libras</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Doações/doacao.html">Doações</a></li>
+                        <li class="nav-item"><a class="nav-link h-color-subtitle fw-bolder px-sm-3 h-font-size_animation " href="/pages/Sobre/sobre.html">Sobre</a></li>
+                        <li class="nav-item"><img class="nav-link px-sm-3 me-3" src="/assets/img/DarkLight/sun.png" alt="Botão de mudança de tema." id="icon" role="button" title="Ícone do Sol ou Lua"></li>
+                    </ul>
+                    <a href="/pages/Login/login.html" role="button"><button type="button" class="h-pills fw-bolder" title="Iniciar">Iniciar</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!---------------------------- CONTEÚDO PRINCIPAL (CENTRO DA PÁGINA) -------------------------->
+    <main>
+
+        <!-- SEÇÃO DE "BEM VINDO" -->
+        <section class="py-4 mb-5 h-section-welcome" >
+            <div class="container px-5">
+                <div class="row">
+                    <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-lg-1">
+                        <div class="my-5 text-center text-xl-start">
+                            <!-- TÍTULO -->
+                            <h1 class="display-5 fw-bolder mb-2 h-color-title-section">Que prazer ter você aqui no <span class="display-5 fw-bolder mb-2 h-color-help_up">Help Up</span>!</h1>
+                            <!-- PARÁGRAFO -->
+                            <p class="lead fw-normal mb-4 h-color-subtitle">Um site desenvolvido e pensado especialmente na acessibilidade para deficientes auditivos e pessoas interessadas em aprender libras.</p>
+                            <!-- BOTÃO "INICIAR" -->
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-lg px-4 welcome__button fw-bolder" href="/pages/Login/login.html">Iniciar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IMAGEM DO CANTO DIREITO -->
+                    <div class="col-xl-5 col-xxl-6 d-xl-block" data-aos="zoom-in" data-aos-delay="200"><img class="img-fluid rounded-3 my-5 animated" src="/assets/img/ImageObjective.png" alt="Imagem ilustrativa, onde mostra duas pessoas conversando, simbolos de 'conexão' e uma orelha com um símbolo de som desligado, indicando a surdez."/></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "NOSSO FOCO" -->
+        <section class="pb-4 mb-5">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="h-color-title-section fw-bolder">NOSSO FOCO:</h2>
+                    <h2 class="h-color-help_up fw-bolder">ACESSBILIDADE DIGITAL</h2>
+                </div>
+                <div class="row text-center mt-5">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x mb-4">
+                            <img src="/assets/img/Cards/populacao_deficiente.png" alt="Imagem ilustrativa da população deficiente no Brasil." role="img">
+                        </span>
+                        <h4 class="mt-xl-4 h-color-help_up fw-bolder">Menos de 1%</h4>
+                        <h4 class="mb-xl-3 h-color-title-section fw-bolder">dos sites</h4>
+                        <p class="fs-5 h-color-subtitle mb-4">é acessível a pessoas com deficiência (<a href="https://bigdatacorp.com.br/estudo-acessibilidade-em-sites-e-apps-brasileiros-ed-2021/" target="_blank" role="link" class="fs-5 h-color-help_up fw-bolder">Acessibilidade da Web Brasileira</a>).</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x mb-4">
+                            <img src="/assets/img/Cards/acessivel_nao-acessivel.png" alt="Imagem ilustrativa da população deficiente no Brasil." role="img">
+                        </span>
+                        <h4 class="mt-xl-3 h-color-help_up fw-bolder">77,28%</h4>
+                        <h4 class="mb-xl-3 h-color-title-section fw-bolder">dos sites</h4>
+                        <p class="fs-5 h-color-subtitle mb-4">testados não possuiam links adaptados (<a href="https://bigdatacorp.com.br/estudo-acessibilidade-em-sites-e-apps-brasileiros-ed-2021/" target="_blank" role="link" class="fs-5 h-color-help_up fw-bolder">Acessibilidade da Web Brasileira</a>).</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x mb-4">
+                            <img src="/assets/img/Cards/barreira_quebrada.png" alt="Imagem ilustrativa de duas barreiras quebradas" role="img">
+                        </span>
+                        <h4 class="mt-xl-3 h-color-title-section fw-bolder">Queremos</h4>
+                        <h4 class="mb-xl-3 h-color-help_up fw-bolder">eliminar barreiras</h4>
+                        <p class="fs-5 h-color-subtitle mb-4">tornando a web mais acessível e consumível (especialmente para os deficientes auditivos).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO "VLIBRAS" -->
+        <section class="h-bg-vlibras py-4">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <!-- PARÁGRAFO -->
+                            <h1 class="display-6 fw-bolder text-white mb-4">Utilize a ferramenta V-LIBRAS presente no canto direito de sua tela para ler textos e imagens desse site</h1>
+                            <!-- BOTÃO "CONHECER FERRAMENTA" -->
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <a class="btn btn-lg px-4 vlibras_button fw-bolder" href="https://www.gov.br/governodigital/pt-br/vlibras" target="_blank"><i class="fa-sharp fa-solid fa-puzzle-piece"></i> Conhecer ferramenta</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGEM DA ODS 4 -->
+                    <div class="col-xl-5 col-xxl-6 d-xl-block text-center" data-aos="zoom-in" data-aos-delay="200"><img class="img-fluid rounded-3 my-5 animated" src="/assets/img/V-Libras/vlibras.png" alt="Logotipo da ODS (Objetivo de Desenvolvimento Sustentável) 4" /></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO "O QUE NÓS OFERECEMOS?" -->
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <div class="text-center">
+                            <h2 class="fw-bolder h-color-title-section">O QUE NÓS OFERECEMOS?</h2>
+                            <p class="lead fw-normal mb-4 h-color-subtitle">Seguem três seções presentes neste site, onde você poderá usufruir</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 mt-5 mb-5">
+                    <div class="col-lg-5 mb-5 mx-auto">
+                        <div class="card h-100 h-shadow-card-card border-2 h-border_radius-cards">
+                            <div class="col mx-auto w-50 mt-5"><img class="card-img-top" src="/assets/img/PagesIcon/leituras.png" alt="Imagem ilustrativa de um livro, indicando a primeira seção desse site."/></div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3 fw-bold">Leituras</h5>
+                                <p class="card-text mb-4">Encontre seu livro favorito e consiga lê-lo utilizando a ferramenta V-Libras.</p>
+                                <a class="text-decoration-none link-dark" href="/pages/Leituras/leitura.html"><button type="button" class="h-pills fw-bolder">Ir agora <i class="fa-solid fa-arrow-right"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-5 mx-auto">
+                        <div class="card h-100 h-shadow-card-card border-2 h-border_radius-cards">
+                            <div class="col mx-auto w-50 mt-5"><img class="card-img-top" src="/assets/img/PagesIcon/tradutorLibras.png" alt="Imagem ilustrativa de um livro, indicando a primeira seção desse site."/></div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3 fw-bold">Tradutor em Libras</h5>
+                                <p class="card-text mb-4">Traduza(ou transforme) palavas em português para LBA (Língua Brasileira de Sinais).</p>
+                                <a class="text-decoration-none link-dark" href="/pages/TradutorLibras/tradutorLibras.html"><button type="button" class="h-pills fw-bolder">Ir agora <i class="fa-solid fa-arrow-right"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-5 mt-5 mb-5">
+                    <div class="col-lg-5 mb-5 mx-auto">
+                        <div class="card h-100 h-shadow-card-card border-2 h-border_radius-cards">
+                            <div class="col mx-auto w-50 mt-5"><img class="card-img-top" src="/assets/img/PagesIcon/aprendaLibras.png" alt="Imagem ilustrativa de um livro, indicando a primeira seção desse site."/></div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3 fw-bold">Aprenda Libras</h5>
+                                <p class="card-text mb-4">Inicie seus estudos em libras sabendo o alfabeto, números, palavras-chaves e muito mais!</p>
+                                <a class="text-decoration-none link-dark" href="/pages/AprendaLibras/aprendaLibras.html"><button type="button" class="h-pills fw-bolder">Ir agora <i class="fa-solid fa-arrow-right"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 mb-5 mx-auto">
+                        <div class="card h-100 h-shadow-card-card border-2 h-border_radius-cards">
+                            <div class="col mx-auto w-50 mt-5"><img class="card-img-top" src="/assets/img/PagesIcon/doacoes.png" alt="Imagem ilustrativa de um livro, indicando a primeira seção desse site."/></div>
+                            <div class="card-body p-4">
+                                <h5 class="card-title mb-3 fw-bold">Doações</h5>
+                                <p class="card-text mb-4">Deseja ajudar financeiramente? Conheça ONGs que apoiam o aprendizado de Libras!</p>
+                                <a class="text-decoration-none link-dark" href="/pages/Doações/doacao.html"><button type="button" class="h-pills fw-bolder">Ir agora <i class="fa-solid fa-arrow-right"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </section>
+     
+    </main>
+
+    <!------------------------------------------- RODAPÉ ------------------------------------------>
+    <footer id="footer" class="text-center bg-color_footer">
+        <div class="container pb-2">
+        <!-- SEÇÃO LINKS -->
+        <section class="mt-5">
+            <!-- LINHA -->
+            <div class="row text-center d-flex justify-content-center pt-5">
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/index.html" class="h-links_pages">Início</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Leituras/leitura.html" class="h-links_pages">Leituras</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/TradutorLibras/tradutorLibras.html" class="h-links_pages">Tradutor em Libras</a>
+                </h6>
+            </div>
+    
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/AprendaLibras/aprendaLibras.html" class="h-links_pages">Aprenda Libras</a>
+                </h6>
+            </div>
+
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Doações/doacao.html" class="h-links_pages">Doações</a>
+                </h6>
+            </div>
+
+            <!-- COLUNA -->
+            <div class="col-md-2">
+                <h6 class="text-uppercase fw-bolder h-links_pages pb-2">
+                <a href="/pages/Sobre/sobre.html" class="h-links_pages">Sobre</a>
+                </h6>
+            </div>
+            </div>
+        </section>
+    
+        <hr class="mb-5 h-color-subtitle" />
+    
+        <!-- SEÇÃO FORMULÁRIO -->
+        <section class="mb-5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8">
+                    
+                    <!-- TÍTULO DO FORMULÁRIO -->
+                    <h1 class="h-title_form">Fale conosco</h1>
+
+                    <!-- FORMULÁRIO -->
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="94954244-c603-4099-8d96-2a34136d5ea7">
+                        <input type="hidden" name="redirectTo" value="javascript:void(window.location.href)">
+
+                        <input class="fieldsContactUs h-boxes" type="text" name="name" placeholder="Seu Nome" required title="Digite seu nome."><br>
+                        <input class="fieldsContactUs h-boxes" type="email" name="email" placeholder="Seu E-mail" required title="Digite um E-mail válido."><br>
+                        <textarea class="fieldsContactUs h-box_message" name="message" rows="8" cols="30" placeholder="Sua Mensagem" required title="Descreva sua mensagem para nós."></textarea><br>
+                        <button id="submitContact" class="h-button_submit h-pills fw-bolder me-sm-3" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+                        <button class="h-button_reset h-pills fw-bolder ms-sm-3" type="reset"><i class="fa-solid fa-eraser"></i> Apagar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- SEÇÃO REDES SOCIAIS -->
+        <section class="text-center mb-5">
+            <a href="" class="me-4">
+            <i class="fab fa-facebook-f h-icon_medias"></i>
+            </a>
+            <a href="" class="me-4">
+            <i class="fab fa-twitter h-icon_medias"></i>
+            </a>
+            <a href="" class="me-4">
+            <i class="fab fa-instagram h-icon_medias"></i>
+            </a>
+        </section>
+        </div>
+    </footer>
+
+    <!-------------------------------------- PLUG-IN (V-LIBRAS) ------------------------------------------>
+    <div vw class="enabled">
+        <div vw-access-button class="active">
+            <img class="access-button" data-src="assets/component-ac.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/component-ac.png" title="Plug-In">
+            <img class="pop-up" data-src="assets/popup.png" alt="Conteúdo acessível em libras usando o VLibras Widget com opções dos Avatares Ícaro ou Hozana." src="/assets/img/V-Libras/Plug-in/popup.png">
+        </div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </div>
+
+    <!-- SEÇÃO CENTRAL DE AGRADECIMENTO -->
+    <dialog>
+        <div class="container px-4 px-lg-5 my-5">
+            <!-- TÍTULO -->
+            <h1 class="display-6 fw-bolder h-color-help_up">Agradecemos pela sua mensagem!</h1>
+            <!-- PARÁGRAFO -->
+            <p class="lead fw-normal mb-4 h-color-subtitle">Em breve entraremos em contato ;)</p>
+            <!-- BOTÃO "FECHAR" -->
+            <button type="button" class="h-pills fw-bolder" title="Ok">Ok</button>
+        </div>
+    </dialog>
+    
+    <!-- JAVASCRIPT USADO -->
+    <script src="https://kit.fontawesome.com/4ddcf64cd5.js" crossorigin="anonymous"></script> <!-- BIBLIOTECA DE ÍCONES -->
+    <script src="/assets/scripts/Loading/loading.js"></script>
+    <script src="/assets/scripts/DarkMode/darkMode.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/scripts/DialogContactUs/dialogContactUs.js"></script>
+
+</body>
+</html>
