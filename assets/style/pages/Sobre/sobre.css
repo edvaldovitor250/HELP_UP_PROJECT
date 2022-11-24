@@ -1,0 +1,28 @@
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+/* ==========================================
+   CONFIGURAÇÕES MINHAS PARA A PÁGINA "SOBRE"
+   ========================================== */
+
+/* "ÁSPAS" DO COMENTÁRIO DA SEÇÃO "POR QUE ESCOLHEMOS ACESSIBILIDADE DIGITAL?" */
+ #quote-left {
+    font-size: 60px;
+ }
+
+ /* ÍCONES DO LINKEDIN E GITHUB */
+ .h-icon-linkedin-github {
+    font-size: 35px;
+    color: #AA87EB;
+
+    transition: transform 0.4s ease-in-out, .4s ease-in-out color;
+ }
+ .h-icon-linkedin-github:hover {
+   color: var(--tertiary-color);
+   transform: scale(1.1);
+ }

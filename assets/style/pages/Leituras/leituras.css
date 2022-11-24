@@ -1,0 +1,65 @@
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/components/__button.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+/* =============================
+   CONFIGURAÇÕES DAS PÁGINA
+   "LEITURAS" E "ACESSIBILIDADE"
+   =============================*/
+
+/* SEÇÃO INICIAL SUPERIOR DA PÁGINA "LEITURAS" */
+.h-section-books { 
+  margin-top: 80px;
+
+  background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%), url("/assets/img/BgLeituraBooks/h-section-books.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/** CONFIGURAÇÃO DE TAMANHO DE TODAS AS IMAGENS DOS LIVROS */
+.h-img-card-size {
+  width: 450px;
+  height: 300px;
+}
+
+/* SEÇÃO INICIAL DA SUGESTÃO DE LIVROS */
+.h-section-formulario {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
+/** BACKGROUND DA SEÇÃO DA ODS 4 */
+.h-bg-ods-4 {
+  background: linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.80)100%), url("/assets/img/ODS4/bgOds4.jpg");
+  background-size: cover;
+}
+
+/** BACKGROUND DA SEÇÃO DA PÁGINA "ACESSIBILIDADE" DO BOTÃO */
+.h-bg-vlibras {
+  background: linear-gradient(rgba(0,0,0,.80), rgba(0,0,0,.80)100%), url("/assets/img/V-Libras/backgroundLibras.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ANIMAÇÃO DA IMAGEM DO LADO DIREITO */
+.animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}

@@ -1,0 +1,202 @@
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/components/__loading.css");
+
+/*  ===============
+    CONFIGURAÇÃO DA
+    PÁGINA DE LOGIN
+    ===============*/
+
+/** CONFIGURAÇÃO DO ÍCONE DO "MODO DARK AND LIGHT" */
+.h-theme {
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/** SEÇÃO CENTRAL DA CAIXA DE LOGIN */
+#login {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CAMPO DO LOGO "HELP UP" DENTRO DA CAIXA DE LOGIN */
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* CAIXA DE LOGIN */
+.container {
+    width: 410px;
+    max-width: 520px;
+    height: 520px;
+    background-color: var(--secundary-color);
+    border-radius: 20px;
+    margin: auto;
+    border: 1px solid silver;
+
+    box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -webkit-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -moz-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+
+    transition: .4s ease-in-out background;
+}
+
+/* CAMPOS */
+.fields {
+    margin: 2% 10%;
+}
+
+/* CAMPO DAS CAIXAS DE TEXTO */
+.fields__textboxs {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* CAMPO DAS CAIXAS DE LOGIN */
+.fields__textboxs > input {
+    height: 70px;
+    border: 1px solid silver;
+    border-radius: 20px;
+    margin-bottom: 4%;
+    outline-color: #AA87EB;
+}
+
+/* CAIXA DE E-MAIL E SENHA */
+#field__email,
+#field__pass {
+    padding: 10px;
+}
+
+/* CAMPO "LEMBRAR DO MEU ACESSO" */
+.fields__remember {
+    margin-bottom: 15px;
+
+    transition: .4s ease-in-out color;
+}
+.fields__remember > label {
+    color: var(--tertiary-color);
+    font-size: 15px;
+}
+.fields__remember > input {
+    accent-color: #AA87EB;
+}
+
+/* BOTÃO "ENTRAR" */
+#btn__login {
+    font-size: 16px;
+    font-weight: 550;
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #AA87EB;
+
+    transition: transform .4s ease-in-out;
+}
+#btn__login:hover {
+    transform: scale(1.1);
+}
+
+/* CAMPO DO LINK "ESQUECI MINHA SENHA OU E-MAIL" */
+.fields__recovery {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 4%;
+}
+.fields__recovery > a:hover {
+    opacity: 0.8;
+}
+
+/* TRANSIÇÃO DE COR DO CAMPO DO LINK "ESQUECI MINHA SENHA OU E-MAIL" E
+DO DIVISOR "-OU-" */
+.fields__recovery,
+.fields__divider {
+    transition: .4s ease-in-out color;
+} 
+
+/** CONFIGURAÇÃO DO TEXTO DO CAMPO DO LINK "ESQUECI MINHA SENHA OU E-MAIL" E
+DO DIVISOR "-OU-" */
+.fields__recovery > a , .fields__divider > p {
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 15px;
+}
+
+/* CONFIGURAÇÃO DO DIVISOR "-OU-" */
+.fields__divider > p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4%;
+}
+
+/* CAMPO DO BOTÃO DE LOGIN COM O GOOGLE */
+.fields__google {
+    display: flex;
+    justify-content: center;
+}
+
+/* CONFIGURAÇÃO DO BOTÃO DE LOGIN COM O GOOGLE */
+.fields__google > button {
+    background-color: #3690DF;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 550;
+    width: 70%;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform .4s ease-in-out;
+}
+.fields__google > button:hover {
+    transform: scale(1.1);
+}
+
+/* ÍCONE DO "G" DO GOOGLE */
+#icon {
+    margin-right: 5px;
+}
+
+/* CAMPO "REGISTRAR-SE" */
+.fields__create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: .4s ease-in-out color;
+}
+
+/* CONFIGURAÇÃO DO TEXTO 'Ainda não possui uma conta?' */
+.fields__create > a {
+    text-decoration: none;
+    cursor: default;
+    font-size: 15px;
+    color: var(--tertiary-color);
+}
+
+/* CONFIGURAÇÃO DO TEXTO 'Cadastre-se' */
+#create {
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 550;
+}
+#create:hover {
+    opacity: 0.8;
+}

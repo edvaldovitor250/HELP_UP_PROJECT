@@ -1,0 +1,41 @@
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/components/__cards.css");
+@import url("/assets/style/components/__button.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+/** ======================
+    CONFIGURAÇÃO DA PÁGINA
+    "APRENDA LIBRAS"
+    ======================
+*/
+
+/* SEÇÃO INICIAL SUPERIOR DA PÁGINA "APRENDA LIBRAS" */
+.h-section-aprendaLibras {
+  margin-top: 80px;
+
+  background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%), url("/assets/img/BgAprendaLibras/h-section-aprendaLibras.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* COR DOURADA DA ÁREA "PRO" E ANIMAÇÃO */
+.h-pro-color_animated {
+  color: #D4B254 !important;
+  transition: transform .4s ease-in-out;
+}
+.h-pro-color_animated:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* TAMANHO DO ÍCONE DE ESTRELA */
+.h-section-disable > i {
+  font-size: 30px;
+}

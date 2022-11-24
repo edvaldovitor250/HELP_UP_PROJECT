@@ -1,0 +1,114 @@
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+/* =======================
+   CONFIGURAÇÕES DA PÁGINA
+   "TRADUTOR EM LIBRAS"
+   =======================*/
+
+/* SEÇÃO INICIAL SUPERIOR DA PÁGINA "TRADUTOR EM LIBRAS" */
+.h-section-translator { 
+  margin-top: 80px;
+
+  background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%), url("/assets/img/BgTradutorEmLibras/h-section-translator.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* CENTRALIZAÇÃO DO CONTEÚDO */
+.h-container-translator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* CONTEÚDOS */
+.h-container-translator > .content {
+  padding: 15px;
+  background-color: var(--secundary-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+  -webkit-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+  -moz-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+
+  transition: .4s ease-in-out background;
+
+}
+
+/* IDIOMAS "PORTUGUÊS" E "LIBRAS" */
+.divIdiom {
+  display: flex;
+  gap: 5px;
+}
+.divIdiom > h1 {
+  padding: 10px 0 5px 5px;
+  font-size: 1.5rem;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+/* CONFIGURAÇÕES GERAIS DAS CAIXAS DE TEXTOS */
+.divTextareas {
+  display: flex;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+/* CONFIGURAÇÕES ESPECÍFICAS DAS CAIXAS DE TEXTO */
+.divTextareas > textarea, .textareaTo {
+  outline: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  resize: none;
+  color: var(--tertiary-color);
+  background-color: var(--secundary-color);
+
+  transition: .4s ease-in-out background, .4s ease-in-out color;
+}
+#textareaTo {
+  background-color: var(--octonary-color);
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  cursor: default;
+  overflow: hidden;    
+  text-overflow: ellipsis ;
+  transition: .4s ease-in-out background;
+}
+.divTextareas > textarea::placeholder {
+  color: var(--tertiary-color);
+
+  transition: .4s ease-in-out color;
+}
+
+/* BOTÕES */
+.content > button{
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  background-color: #AA87EB;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+.content > button > i {
+  margin-right: 5px;
+}
+.content > button:hover {
+  opacity: 0.9;
+}

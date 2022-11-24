@@ -1,0 +1,37 @@
+@import url("/assets/style/global.css");
+@import url("/assets/style/reset.css");
+@import url("/assets/style/components/__pills.css");
+@import url("/assets/style/components/__button.css");
+@import url("/assets/style/header_footer/footer.css");
+@import url("/assets/style/header_footer/header.css");
+@import url("/assets/style/components/__loading.css");
+@import url("/assets/style/TemplateBootstrap/templateBootstrap.css");
+
+.h-section-doacao {
+    margin-top: 80px;
+
+    background: linear-gradient(rgba(0,0,0,.60), rgba(0,0,0,.60)100%), url("/assets/img/BgDoações/h-section-doacao.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/** BOTÃO "..." */
+.doacao__button {
+    color: var(--quinary-color) !important;
+    border-color: var(--quinary-color) !important;
+
+    transition: .4s ease-in-out color, .4s ease-in-out border;
+}
+.doacao__button:hover {
+    color: #FFF !important;
+    background-color: #AA87EB;
+    border-color: #AA87EB !important;
+}
+
+/* SOMBRA DAS IMAGENS */
+.h-shadow-img {
+    box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -webkit-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+    -moz-box-shadow: 0px 0px 4px 0px var(--quaternery-color);
+}
