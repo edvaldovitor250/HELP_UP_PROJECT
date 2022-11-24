@@ -1,0 +1,58 @@
+/** ===============
+    CONFIGURAÇÃO DO
+    RODAPÉ
+    ===============
+*/
+@import url("/assets/style/global.css");
+
+/** BACKGROUND DO RODAPÉ (FOOTER) */
+.bg-color_footer {
+    background: var(--senary-color);
+
+    transition: .4s ease-in-out background;
+
+}/* COR E ANIMAÇÃO DOS LINKS PARA AS PÁGINAS */
+.h-links_pages {
+    color: var(--tertiary-color);
+
+    transition: transform 0.4s ease-in-out, .4s ease-in-out color;
+}
+.h-links_pages:hover {
+    color: #AA87EB;
+    transform: scale(1.1) !important;
+}
+
+/** CONFIGURAÇÃO DOS ÍCONES DAS REDES SOCIAIS */
+.h-icon_medias {
+    font-size: 25px;
+    color: var(--tertiary-color);
+    
+    transition: transform 0.4s ease-in-out, .4s ease-in-out color;
+}
+.h-icon_medias:hover {
+    color: #AA87EB;
+    transform: scale(1.1);
+}
+
+/** TÍTULO DO FORMULÁRIO "FALE CONOSCO" */
+.h-title_form {
+    font-size: 30px !important;
+    font-weight: 550;
+    margin-bottom: 10px;
+    color: var(--tertiary-color);
+
+    transition: .4s ease-in-out color;
+}
+
+/** CONFIGURAÇÃO DE TODAS AS CAIXAS DE DADOS E DA CAIXA DE MENSAGENS */
+form > .h-boxes, .h-box_message{
+    padding: 10px !important;
+    margin: 10px 0 10px 0;
+    border-radius: 20px;
+    width: 18em;
+    outline-color: #AA87EB;
+}
+.h-boxes::placeholder,
+.h-box_message::placeholder {
+    font-family: var(--bs-body-font-family);
+}
